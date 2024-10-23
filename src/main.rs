@@ -91,7 +91,7 @@ fn get_books_by_writer(writer:String,database:&mut Vec<Book>) {
 fn get_by_year(publish_year:u32,database:&mut Vec<Book>) {
     for data in database  {
 
-        if publish_year <1960 && imbd_point >7.2 {
+        if publish_year <1960  {
 
             println!("{} Bu yıldan önce çıkan kitaplar {:?}",publish_year,data.name)
             
